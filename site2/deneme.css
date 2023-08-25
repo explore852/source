@@ -1,0 +1,16 @@
+nav {
+    background: transparent;
+}
+
+@media screen and (orientation:portrait) {
+    #avatar {
+        width: 100px !important;
+        height: 100px !important;
+    }
+    nav {
+        background-color: #000a;
+    }
+    #buyukresim {
+        height: 1000px !important;
+    }
+}

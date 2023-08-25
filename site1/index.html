@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="deneme2.css"></head>
+<body>
+    <div class="d-flex justify-content-between border-bottom p-2">
+        <div class="d-block pe-0 mx-2 me-0 me-lg-5 pe-lg-2">
+            <span class="fa-solid fa-shopping-cart text-success ms-2"></span>
+            <span translate="no" class="fw-bolder fs-4">FreshCart</span>
+        </div>
+        <input type="text" style="max-width: 462px;" class="form-control d-none d-md-block ms-4 ms-lg-5 me-auto" placeholder="ara" name="" id="">
+        <div class="d-flex flex-wrap align-content-center">
+            <a href="#modal1" data-bs-toggle="modal" class="text-dark"><i class="fa-regular fa-user fa-lg"></i></a>
+            <a href="#offcanvas1" data-bs-toggle="offcanvas" class="mx-3 text-dark"><i class="fa-solid fa-shopping-bag fa-lg"></i></a>
+
+            <div class="offcanvas offcanvas-end" style="max-width: 400px;" id="offcanvas1" tabindex="-1">
+                <div class="offcanvas-header border-bottom">
+                    <div class="d-block">
+                        <h5>Shop Cart</h5>
+                        <p class="text-muted" style="font-size: 12px;">Location in 382480</p>
+                    </div><button class="btn-close align-self-center" type="button" data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body p-3 overflow-y-scroll" style="font-weight: 500; font-size: 14px;">
+                    <div class="alert alert-danger py-2">
+                        You’ve got FREE delivery. <strong>Start checkout now!</strong></div><hr>
+                    <div class="d-flex justify-content-between mb-3">
+                        <div class="d-flex py-0">
+                            <img src="https://freshcart.codescandy.com/assets/images/products/product-img-1.jpg" width="60px" alt="">
+                            <div><a href="#" class="link-dark text-decoration-none">Haldiram's Sev Bhujia</a><br><span class="text-muted">.98 / lb</span><br>
+                                <i class="fa-solid fa-trash text-success me-1"></i><span class="
+                                text-muted">Remove</span>
+                            </div>
+                        </div>
+                        <div class="align-self-center">
+                            <i class="fw-bold fst-italic">$5.00</i>
+                        </div>
+                    </div><hr>
+                    <div class="d-flex justify-content-between mb-3">
+                        <div class="d-flex py-0">
+                            <img src="https://freshcart.codescandy.com/assets/images/products/product-img-1.jpg" width="60px" alt="">
+                            <div><a href="#" class="link-dark text-decoration-none">Haldiram's Sev Bhujia</a><br><span class="text-muted">.98 / lb</span><br>
+                                <i class="fa-solid fa-trash text-success me-1"></i><span class="
+                                text-muted">Remove</span>
+                            </div>
+                        </div>
+                        <div class="align-self-center">
+                            <i class="fw-bold fst-italic">$5.00</i>
+                        </div>
+                    </div><hr>
+                    <div class="d-flex justify-content-between mb-3">
+                        <div class="d-flex py-0">
+                            <img src="https://freshcart.codescandy.com/assets/images/products/product-img-1.jpg" width="60px" alt="">
+                            <div><a href="#" class="link-dark text-decoration-none">Haldiram's Sev Bhujia</a><br><span class="text-muted">.98 / lb</span><br>
+                                <i class="fa-solid fa-trash text-success me-1"></i><span class="
+                                text-muted">Remove</span>
+                            </div>
+                        </div>
+                        <div class="align-self-center">
+                            <i class="fw-bold fst-italic">$5.00</i>
+                        </div>
+                    </div><hr>
+                    <div class="d-flex justify-content-between mb-3">
+                        <div class="d-flex py-0">
+                            <img src="https://freshcart.codescandy.com/assets/images/products/product-img-1.jpg" width="60px" alt="">
+                            <div><a href="#" class="link-dark text-decoration-none">Haldiram's Sev Bhujia</a><br><span class="text-muted">.98 / lb</span><br>
+                                <i class="fa-solid fa-trash text-success me-1"></i><span class="
+                                text-muted">Remove</span>
+                            </div>
+                        </div>
+                        <div class="align-self-center">
+                            <i class="fw-bold fst-italic">$5.00</i>
+                        </div>
+                    </div><hr>
+                    <div class="d-flex justify-content-between mb-3">
+                        <div class="d-flex py-0">
+                            <img src="https://freshcart.codescandy.com/assets/images/products/product-img-1.jpg" width="60px" alt="">
+                            <div><a href="#" class="link-dark text-decoration-none">Haldiram's Sev Bhujia</a><br><span class="text-muted">.98 / lb</span><br>
+                                <i class="fa-solid fa-trash text-success me-1"></i><span class="
+                                text-muted">Remove</span>
+                            </div>
+                        </div>
+                        <div class="align-self-center">
+                            <i class="fw-bold fst-italic">$5.00</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="modal1" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered 
+                modal-fullscreen-sm-down">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="fw-bolder">Sign Up</h4>
+                            <button class="btn-close" type="button" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body p-4">
+                            <form action="site2.html" method="post">
+                                <label class="form-label" for="name">isim</label>
+                                <input class="form-control mb-2" type="text" placeholder="isminizi girin" name="name" id="name">
+
+                                <label class="form-label" for="mail">eposta</label>
+                                <input required class="form-control mb-2" type="email" placeholder="epostanızı girin" name="mail" id="mail">
+
+                                <label class="form-label" for="sifre">şifre</label>
+                                <input class="form-control mb-2" autocomplete="off" type="password" placeholder="şifrenizi girin" name="sifre" id="sifre">
+                                <div class="form-text">By Signup, you agree to our Terms of <span class="text-success mb-1" style="cursor: pointer;">Service & Privacy Policy</span></div>
+                                <div class="text-end"><button class="btn btn-success fw-bold mt-3" type="submit">Gönder</button></div>
+                            </form>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-center">
+                            Already have an account? <a href="#" class="link-success">Sign in</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid container-lg mt-3">
+        <div class="row mt-3">
+            <div class="col-12 col-md-7">
+                <div class="w-100 rounded d-flex justify-content-center flex-wrap align-content-center" style="background-image: url('resimler/3.jpg'); background-size: cover; height: 480px;">
+                    <div class="w-75">
+                        <span class="text-muted">Lorem ipsum dolor sit <span class="badge bg-danger">%15</span></span><br>
+
+                        <h1 class="fw-bolder pt-2">Lorem ipsum dolor sit amet consectetur.</h1>
+                        <p style="font-size: 14px; font-weight: 500;">Lorem ipsum dolor sit amet</p>
+                        <p style="font-weight: 500;">Start from <span class="text-danger fs-4">$34.90</span></p>
+                        <a href="#" class="btn btn-success mt-3">shop deals now -></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-5">
+                <div class="w-100 rounded mt-3 mt-md-0" style="background-image: url('resimler/3.jpg'); background-size: cover; height: 230px;">
+                    <div class="p-5 py-4 w-100">
+                        <span class="fs-4 fw-bolder lh-sm">10% cashback on <br>
+                            personal care</span><br>
+
+                        <div class="my-3">
+                            <span class="text-muted" style="font-weight: 500;">Max cashback: $12<br></span>
+                        </div>
+
+                        <div>
+                            <span class="text-muted">Code: <strong>CARE12</strong></span>
+                        </div>
+                        <button class="btn btn-dark mt-3" type="button">Shop now</button>
+                    </div>
+                </div>
+                <div class="w-100 rounded mt-3" style="background-image: url('resimler/2.jpg'); background-size: cover; height: 230px;">
+                    <div class="p-5 py-4 w-100">
+                        <span class="fs-4 fw-bolder lh-sm">10% cashback on <br>
+                            personal care</span><br>
+
+                        <div class="my-3">
+                            <span class="text-muted" style="font-weight: 500;">Max cashback: $12<br></span>
+                        </div>
+
+                        <div>
+                            <span class="text-muted">Code: <strong>CARE12</strong></span>
+                        </div>
+                        <button class="btn btn-dark mt-3" type="button">Shop now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid container-lg my-5">
+        <h3>Shop Popular Categories</h3>
+        <div class="row gy-2 mt-4 text-center">
+            <div class="col-6 col-sm-4 col-md-2">
+                <img class="rounded-circle" src="https://freshcart.codescandy.com/assets/images/category/dairy-bread-eggs.png" width="110px" height="110px" alt=""><br>
+                <span style="font-weight: 500; font-size: 14px;">Lorem, ipsum dolor.</span>
+            </div>
+            <div class="col-6 col-sm-4 col-md-2">
+                <img class="rounded-circle" src="https://freshcart.codescandy.com/assets/images/category/dairy-bread-eggs.png" width="110px" height="110px" alt=""><br>
+                <span style="font-weight: 500; font-size: 14px;">Lorem, ipsum dolor.</span>
+            </div>
+            <div class="col-6 col-sm-4 col-md-2">
+                <img class="rounded-circle" src="https://freshcart.codescandy.com/assets/images/category/dairy-bread-eggs.png" width="110px" height="110px" alt=""><br>
+                <span style="font-weight: 500; font-size: 14px;">Lorem, ipsum dolor.</span>
+            </div>
+            <div class="col-6 col-sm-4 col-md-2">
+                <img class="rounded-circle" src="https://freshcart.codescandy.com/assets/images/category/dairy-bread-eggs.png" width="110px" height="110px" alt=""><br>
+                <span style="font-weight: 500; font-size: 14px;">Lorem, ipsum dolor.</span>
+            </div>
+            <div class="col-6 col-sm-4 col-md-2">
+                <img class="rounded-circle" src="https://freshcart.codescandy.com/assets/images/category/dairy-bread-eggs.png" width="110px" height="110px" alt=""><br>
+                <span style="font-weight: 500; font-size: 14px;">Lorem, ipsum dolor.</span>
+            </div>
+            <div class="col-6 col-sm-4 col-md-2">
+                <img class="rounded-circle" src="https://freshcart.codescandy.com/assets/images/category/dairy-bread-eggs.png" width="110px" height="110px" alt=""><br>
+                <span style="font-weight: 500; font-size: 14px;">Lorem, ipsum dolor.</span>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid container-lg">
+        <div class="row g-2">
+            <div class="col-12 col-lg-3">
+                <h4 class="fw-bolder">New Products</h4>
+                <p class="text-muted" style="font-size: 14px; font-weight: 500;">New products with updated stocks</p>
+            </div>
+            <div class="col-12 col-xl-9">
+                <div class="d-flex justify-content-around">
+                    <button class="btn btn-success px-5">Fruits Vegatables</button>
+                    <a href="#" class="link-success pe-4 text-decoration-none align-self-center">Fruits Vegatables</a>
+                    <a href="#" class="link-success d-none d-md-block text-decoration-none align-self-center">Fruits Vegatables</a>
+                    <a href="#" class="link-success d-none d-md-block text-decoration-none align-self-center">Fruits Vegatables</a>
+                    <a href="#" class="link-success d-none d-md-block text-decoration-none align-self-center">Fruits Vegatables</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid container-lg">
+        <div class="row g-2 mt-2">
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="card p-0">
+                    <div class="card-body overflow-hidden">
+                        <div class="badge px-2 bg-danger">SALE</div>
+                        <div class="text-center">
+                            <img src="https://freshcart.codescandy.com/assets/images/products/product-img-6.jpg" width="145px" alt=""></div>
+                        <span class="card-text lh-sm" style="font-weight: 500; font-size: 14px;">Lorem ipsum dolor sit amet consectetur.</span><br>        
+                        <span class="fa-solid fa-star text-warning fa-2xs"></span>
+                        <span class="fa-solid fa-star text-warning fa-2xs"></span>
+                        <span class="fa-solid fa-star text-warning fa-2xs"></span>
+                        <span class="fa-solid fa-star text-warning fa-2xs"></span>
+                        <span class="fa-solid fa-star-half text-warning fa-2xs"></span>
+                        <span class="text-secondary" style="font-size: 12px; font-weight: 500;">4.4(481)</span>
+                        <div class="d-flex justify-content-between">
+                            <span>$17</span><span class="text-success fw-bold" style="font-size: 12px;">IN STOCK</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="card p-0">
+                    <div class="card-body overflow-hidden">
+                        <div class="badge px-2 bg-danger">SALE</div>
+                        <div class="text-center">
+                            <img src="https://freshcart.codescandy.com/assets/images/products/product-img-6.jpg" width="145px" alt=""></div>
+                        <span class="card-text lh-sm" style="font-weight: 500; font-size: 14px;">Lorem ipsum dolor sit amet consectetur.</span><br>        
+                        <span class="fa-solid fa-star text-warning fa-2xs"></span>
+                        <span class="fa-solid fa-star text-warning fa-2xs"></span>
+                        <span class="fa-solid fa-star text-warning fa-2xs"></span>
+                        <span class="fa-solid fa-star text-warning fa-2xs"></span>
+                        <span class="fa-solid fa-star-half text-warning fa-2xs"></span>
+                        <span class="text-secondary" style="font-size: 12px; font-weight: 500;">4.4(481)</span>
+                        <div class="d-flex justify-content-between">
+                            <span>$17</span><span class="text-success fw-bold" style="font-size: 12px;">IN STOCK</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="card p-0">
+                    <div class="card-body overflow-hidden">
+                        <div class="badge px-2 bg-danger">SALE</div>
+                        <div class="text-center">
+                            <img src="https://freshcart.codescandy.com/assets/images/products/product-img-6.jpg" width="145px" alt=""></div>
+                        <span class="card-text lh-sm" style="font-weight: 500; font-size: 14px;">Lorem ipsum dolor sit amet consectetur.</span><br>        
+                        <span class="fa-solid fa-star text-warning fa-2xs"></span>
+                        <span class="fa-solid fa-star text-warning fa-2xs"></span>
+                        <span class="fa-solid fa-star text-warning fa-2xs"></span>
+                        <span class="fa-solid fa-star text-warning fa-2xs"></span>
+                        <span class="fa-solid fa-star-half text-warning fa-2xs"></span>
+                        <span class="text-secondary" style="font-size: 12px; font-weight: 500;">4.4(481)</span>
+                        <div class="d-flex justify-content-between">
+                            <span>$17</span><span class="text-success fw-bold" style="font-size: 12px;">IN STOCK</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="card p-0">
+                    <div class="card-body overflow-hidden">
+                        <div class="badge px-2 bg-danger">SALE</div>
+                        <div class="text-center">
+                            <img src="https://freshcart.codescandy.com/assets/images/products/product-img-6.jpg" width="145px" alt=""></div>
+                        <span class="card-text lh-sm" style="font-weight: 500; font-size: 14px;">Lorem ipsum dolor sit amet consectetur.</span><br>        
+                        <span class="fa-solid fa-star text-warning fa-2xs"></span>
+                        <span class="fa-solid fa-star text-warning fa-2xs"></span>
+                        <span class="fa-solid fa-star text-warning fa-2xs"></span>
+                        <span class="fa-solid fa-star text-warning fa-2xs"></span>
+                        <span class="fa-solid fa-star-half text-warning fa-2xs"></span>
+                        <span class="text-secondary" style="font-size: 12px; font-weight: 500;">4.4(481)</span>
+                        <div class="d-flex justify-content-between">
+                            <span>$17</span><span class="text-success fw-bold" style="font-size: 12px;">IN STOCK</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="card p-0">
+                    <div class="card-body overflow-hidden">
+                        <div class="badge px-2 bg-danger">SALE</div>
+                        <div class="text-center">
+                            <img src="https://freshcart.codescandy.com/assets/images/products/product-img-6.jpg" width="145px" alt=""></div>
+                        <span class="card-text lh-sm" style="font-weight: 500; font-size: 14px;">Lorem ipsum dolor sit amet consectetur.</span><br>        
+                        <span class="fa-solid fa-star text-warning fa-2xs"></span>
+                        <span class="fa-solid fa-star text-warning fa-2xs"></span>
+                        <span class="fa-solid fa-star text-warning fa-2xs"></span>
+                        <span class="fa-solid fa-star text-warning fa-2xs"></span>
+                        <span class="fa-solid fa-star-half text-warning fa-2xs"></span>
+                        <span class="text-secondary" style="font-size: 12px; font-weight: 500;">4.4(481)</span>
+                        <div class="d-flex justify-content-between">
+                            <span>$17</span><span class="text-success fw-bold" style="font-size: 12px;">IN STOCK</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="card p-0">
+                    <div class="card-body overflow-hidden">
+                        <div class="badge px-2 bg-danger">SALE</div>
+                        <div class="text-center">
+                            <img src="https://freshcart.codescandy.com/assets/images/products/product-img-6.jpg" width="145px" alt=""></div>
+                        <span class="card-text lh-sm" style="font-weight: 500; font-size: 14px;">Lorem ipsum dolor sit amet consectetur.</span><br>        
+                        <span class="fa-solid fa-star text-warning fa-2xs"></span>
+                        <span class="fa-solid fa-star text-warning fa-2xs"></span>
+                        <span class="fa-solid fa-star text-warning fa-2xs"></span>
+                        <span class="fa-solid fa-star text-warning fa-2xs"></span>
+                        <span class="fa-solid fa-star-half text-warning fa-2xs"></span>
+                        <span class="text-secondary" style="font-size: 12px; font-weight: 500;">4.4(481)</span>
+                        <div class="d-flex justify-content-between">
+                            <span>$17</span><span class="text-success fw-bold" style="font-size: 12px;">IN STOCK</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid container-lg mt-5">
+        <div class="d-flex mb-5 justify-content-between">
+            <div class="rounded-start-3 p-4 p-lg-5 w-100 div1" style="background-color: var(--bs-gray-100);">
+                <h4 class="fs-3 fw-bolder">One Stop Grocery Shop</h4>
+                <p class="text-secondary pb-2" style="font-weight: 500; font-size: 18px;">Shopping for your furry friend? Find food,<br>treats, and more in one easy spot.</p>
+                <button class="btn btn-dark" type="button">Get discound on share</button>
+            </div>
+            <div class="d-none d-lg-block w-50" style="background-image: url('https://freshcart.codescandy.com/assets/images/svg-graphics/store-graphics.svg'); background-size: cover;"></div>
+        </div>
+        <h4 class="pt-3">Special Offers of the View All Week!</h4>
+        <div class="d-flex justify-content-between text-start">
+            <text class="text-secondary" style="font-weight: 500;">Get exclusive ongoing offers, deals, and discount codes of shopping</text>
+            <span><a href="#" class="link-success text-decoration-none">View All</a><i class="fa-solid fa-chevron-right fa-2xs text-success ps-1"></i></span>
+        </div></div>
+    <div class="container-fluid container-lg mt-5">
+        <div class="row g-0 border border-danger border-2 rounded">
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="card p-0">
+                    <div class="card-body overflow-hidden">
+                        <div class="badge px-2 bg-primary">25%</div>
+                        <div class="text-center">
+                            <img src="https://freshcart.codescandy.com/assets/images/products/product-img-2.jpg" width="145px" alt="">
+                        </div><div class="text-center">
+                            <span>$15</span><br><span class="lh-sm" style="font-weight: 500; font-size: 14px;">Lorem ipsum dolor sit amet consectetur.</span><br>
+                            <i class="fa-solid fa-star fa-2xs text-warning"></i>
+                            <i class="fa-solid fa-star fa-2xs text-warning"></i>
+                            <i class="fa-solid fa-star fa-2xs text-warning"></i>
+                            <i class="fa-solid fa-star fa-2xs text-warning"></i>
+                            <i class="fa-solid fa-star-half fa-2xs text-warning"></i><span         
+                            class="text-secondary" style="font-weight: 500; font-size: 12px;">4.1(3217)</span><br><div class="text-success py-2" style="font-size: 12px; font-weight: 500;">IN STOCK</div>    
+                            <div class="text-secondary" style="font-weight: 500; font-size: 12px;">the available products : <span class="text-dark">12</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="card p-0">
+                    <div class="card-body overflow-hidden">
+                        <div class="badge px-2 bg-primary">25%</div>
+                        <div class="text-center">
+                            <img src="https://freshcart.codescandy.com/assets/images/products/product-img-2.jpg" width="145px" alt="">
+                        </div><div class="text-center">
+                            <span>$15</span><br><span class="lh-sm" style="font-weight: 500; font-size: 14px;">Lorem ipsum dolor sit amet consectetur.</span><br>
+                            <i class="fa-solid fa-star fa-2xs text-warning"></i>
+                            <i class="fa-solid fa-star fa-2xs text-warning"></i>
+                            <i class="fa-solid fa-star fa-2xs text-warning"></i>
+                            <i class="fa-solid fa-star fa-2xs text-warning"></i>
+                            <i class="fa-solid fa-star-half fa-2xs text-warning"></i><span         
+                            class="text-secondary" style="font-weight: 500; font-size: 12px;">4.1(3217)</span><br><div class="text-success py-2" style="font-size: 12px; font-weight: 500;">IN STOCK</div>    
+                            <div class="text-secondary" style="font-weight: 500; font-size: 12px;">the available products : <span class="text-dark">12</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="card p-0">
+                    <div class="card-body overflow-hidden">
+                        <div class="badge px-2 bg-primary">25%</div>
+                        <div class="text-center">
+                            <img src="https://freshcart.codescandy.com/assets/images/products/product-img-2.jpg" width="145px" alt="">
+                        </div><div class="text-center">
+                            <span>$15</span><br><span class="lh-sm" style="font-weight: 500; font-size: 14px;">Lorem ipsum dolor sit amet consectetur.</span><br>
+                            <i class="fa-solid fa-star fa-2xs text-warning"></i>
+                            <i class="fa-solid fa-star fa-2xs text-warning"></i>
+                            <i class="fa-solid fa-star fa-2xs text-warning"></i>
+                            <i class="fa-solid fa-star fa-2xs text-warning"></i>
+                            <i class="fa-solid fa-star-half fa-2xs text-warning"></i><span         
+                            class="text-secondary" style="font-weight: 500; font-size: 12px;">4.1(3217)</span><br><div class="text-success py-2" style="font-size: 12px; font-weight: 500;">IN STOCK</div>    
+                            <div class="text-secondary" style="font-weight: 500; font-size: 12px;">the available products : <span class="text-dark">12</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="card p-0">
+                    <div class="card-body overflow-hidden">
+                        <div class="badge px-2 bg-primary">25%</div>
+                        <div class="text-center">
+                            <img src="https://freshcart.codescandy.com/assets/images/products/product-img-2.jpg" width="145px" alt="">
+                        </div><div class="text-center">
+                            <span>$15</span><br><span class="lh-sm" style="font-weight: 500; font-size: 14px;">Lorem ipsum dolor sit amet consectetur.</span><br>
+                            <i class="fa-solid fa-star fa-2xs text-warning"></i>
+                            <i class="fa-solid fa-star fa-2xs text-warning"></i>
+                            <i class="fa-solid fa-star fa-2xs text-warning"></i>
+                            <i class="fa-solid fa-star fa-2xs text-warning"></i>
+                            <i class="fa-solid fa-star-half fa-2xs text-warning"></i><span         
+                            class="text-secondary" style="font-weight: 500; font-size: 12px;">4.1(3217)</span><br><div class="text-success py-2" style="font-size: 12px; font-weight: 500;">IN STOCK</div>    
+                            <div class="text-secondary" style="font-weight: 500; font-size: 12px;">the available products : <span class="text-dark">12</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="card p-0">
+                    <div class="card-body overflow-hidden">
+                        <div class="badge px-2 bg-primary">25%</div>
+                        <div class="text-center">
+                            <img src="https://freshcart.codescandy.com/assets/images/products/product-img-2.jpg" width="145px" alt="">
+                        </div><div class="text-center">
+                            <span>$15</span><br><span class="lh-sm" style="font-weight: 500; font-size: 14px;">Lorem ipsum dolor sit amet consectetur.</span><br>
+                            <i class="fa-solid fa-star fa-2xs text-warning"></i>
+                            <i class="fa-solid fa-star fa-2xs text-warning"></i>
+                            <i class="fa-solid fa-star fa-2xs text-warning"></i>
+                            <i class="fa-solid fa-star fa-2xs text-warning"></i>
+                            <i class="fa-solid fa-star-half fa-2xs text-warning"></i><span         
+                            class="text-secondary" style="font-weight: 500; font-size: 12px;">4.1(3217)</span><br><div class="text-success py-2" style="font-size: 12px; font-weight: 500;">IN STOCK</div>    
+                            <div class="text-secondary" style="font-weight: 500; font-size: 12px;">the available products : <span class="text-dark">12</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="card p-0">
+                    <div class="card-body overflow-hidden">
+                        <div class="badge px-2 bg-primary">25%</div>
+                        <div class="text-center">
+                            <img src="https://freshcart.codescandy.com/assets/images/products/product-img-2.jpg" width="145px" alt="">
+                        </div><div class="text-center">
+                            <span>$15</span><br><span class="lh-sm" style="font-weight: 500; font-size: 14px;">Lorem ipsum dolor sit amet consectetur.</span><br>
+                            <i class="fa-solid fa-star fa-2xs text-warning"></i>
+                            <i class="fa-solid fa-star fa-2xs text-warning"></i>
+                            <i class="fa-solid fa-star fa-2xs text-warning"></i>
+                            <i class="fa-solid fa-star fa-2xs text-warning"></i>
+                            <i class="fa-solid fa-star-half fa-2xs text-warning"></i><span         
+                            class="text-secondary" style="font-weight: 500; font-size: 12px;">4.1(3217)</span><br><div class="text-success py-2" style="font-size: 12px; font-weight: 500;">IN STOCK</div>    
+                            <div class="text-secondary" style="font-weight: 500; font-size: 12px;">the available products : <span class="text-dark">12</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h4 class="pt-5 mt-2">Bestsellers In Your Area</h4>
+        <p class="p-0 text-secondary" style="font-weight: 500; font-size: 14px;">Find the bestseller products in your area with discount.</p>
+        
+        <div class="row g-2">
+            <div class="col-6 col-sm-3">
+                <div class="card p-0">
+                    <div class="card-body overflow-hidden">
+                        <div class="badge px-2 bg-warning">SALE</div>
+                        <div class="d-flex justify-content-center">
+                            <img src="https://freshcart.codescandy.com/assets/images/products/product-img-4.jpg" width="145px" alt="">
+                        </div>
+                        <span style="font-size: 14px; font-weight: 500;">Lorem ipsum dolor sit.</span>
+                        <br><i class="fa-solid fa-star fa-2xs text-warning"></i>
+                        <i class="fa-solid fa-star fa-2xs text-warning"></i>
+                        <i class="fa-solid fa-star fa-2xs text-warning"></i>
+                        <i class="fa-solid fa-star fa-2xs text-warning"></i>
+                        <i class="fa-solid fa-star-half fa-2xs text-warning"></i><span         
+                        class="text-secondary" style="font-weight: 500; font-size: 12px;">4.1(3217)</span>
+                        <div class="d-flex justify-content-between">
+                            <div style="font-size: 14px; font-weight: 500;">
+                                <span class="text-danger">$25</span>
+                                <span class="text-secondary text-decoration-line-through">$25</span>
+                            </div>
+                            <div style="font-size: 14px; font-weight: 500;">
+                                <a href="#" class="link-success text-decoration-none">IN STOCK</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-3">
+                <div class="card p-0">
+                    <div class="card-body overflow-hidden">
+                        <div class="badge px-2 bg-warning">SALE</div>
+                        <div class="d-flex justify-content-center">
+                            <img src="https://freshcart.codescandy.com/assets/images/products/product-img-4.jpg" width="145px" alt="">
+                        </div>
+                        <span style="font-size: 14px; font-weight: 500;">Lorem ipsum dolor sit.</span>
+                        <br><i class="fa-solid fa-star fa-2xs text-warning"></i>
+                        <i class="fa-solid fa-star fa-2xs text-warning"></i>
+                        <i class="fa-solid fa-star fa-2xs text-warning"></i>
+                        <i class="fa-solid fa-star fa-2xs text-warning"></i>
+                        <i class="fa-solid fa-star-half fa-2xs text-warning"></i><span         
+                        class="text-secondary" style="font-weight: 500; font-size: 12px;">4.1(3217)</span>
+                        <div class="d-flex justify-content-between">
+                            <div style="font-size: 14px; font-weight: 500;">
+                                <span class="text-danger">$25</span>
+                                <span class="text-secondary text-decoration-line-through">$25</span>
+                            </div>
+                            <div style="font-size: 14px; font-weight: 500;">
+                                <a href="#" class="link-success text-decoration-none">IN STOCK</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-3">
+                <div class="card p-0">
+                    <div class="card-body overflow-hidden">
+                        <div class="badge px-2 bg-warning">SALE</div>
+                        <div class="d-flex justify-content-center">
+                            <img src="https://freshcart.codescandy.com/assets/images/products/product-img-4.jpg" width="145px" alt="">
+                        </div>
+                        <span style="font-size: 14px; font-weight: 500;">Lorem ipsum dolor sit.</span>
+                        <br><i class="fa-solid fa-star fa-2xs text-warning"></i>
+                        <i class="fa-solid fa-star fa-2xs text-warning"></i>
+                        <i class="fa-solid fa-star fa-2xs text-warning"></i>
+                        <i class="fa-solid fa-star fa-2xs text-warning"></i>
+                        <i class="fa-solid fa-star-half fa-2xs text-warning"></i><span         
+                        class="text-secondary" style="font-weight: 500; font-size: 12px;">4.1(3217)</span>
+                        <div class="d-flex justify-content-between">
+                            <div style="font-size: 14px; font-weight: 500;">
+                                <span class="text-danger">$25</span>
+                                <span class="text-secondary text-decoration-line-through">$25</span>
+                            </div>
+                            <div style="font-size: 14px; font-weight: 500;">
+                                <a href="#" class="link-success text-decoration-none">IN STOCK</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 col-sm-3">
+                <div class="card p-0">
+                    <div class="card-body overflow-hidden">
+                        <div class="badge px-2 bg-warning">SALE</div>
+                        <div class="d-flex justify-content-center">
+                            <img src="https://freshcart.codescandy.com/assets/images/products/product-img-4.jpg" width="145px" alt="">
+                        </div>
+                        <span style="font-size: 14px; font-weight: 500;">Lorem ipsum dolor sit.</span>
+                        <br><i class="fa-solid fa-star fa-2xs text-warning"></i>
+                        <i class="fa-solid fa-star fa-2xs text-warning"></i>
+                        <i class="fa-solid fa-star fa-2xs text-warning"></i>
+                        <i class="fa-solid fa-star fa-2xs text-warning"></i>
+                        <i class="fa-solid fa-star-half fa-2xs text-warning"></i><span         
+                        class="text-secondary" style="font-weight: 500; font-size: 12px;">4.1(3217)</span>
+                        <div class="d-flex justify-content-between">
+                            <div style="font-size: 14px; font-weight: 500;">
+                                <span class="text-danger">$25</span>
+                                <span class="text-secondary text-decoration-line-through">$25</span>
+                            </div>
+                            <div style="font-size: 14px; font-weight: 500;">
+                                <a href="#" class="link-success text-decoration-none">IN STOCK</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid text-bg-danger">
+        <div class="container mt-5">
+            <div class="row g-2">
+                <div class="col-12 col-md-6">
+                    <div class="pt-5">
+                        <span style="font-weight: 500;">$30 discount for your first order</span>
+                        <h4 class="pt-2">Get top deals, latest trends, and <br> more.</h4>
+                        <p class="opacity-75 pb-5" style="font-size: 14px; font-weight: 500;">Join our email subscription now to get updates on promotions and <br> coupons.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="pt-0">
+                        <div class="d-flex justify-content-center">
+                            <img src="https://freshcart.codescandy.com/assets/images/png/girl-email.png" width="400px" height="255px" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid" style="background: var(--bs-gray-200);
+    font-size: 14px; font-weight: 500;">
+        <div class="container pt-5">
+            <div class="row g-3">
+                <div class="col-6 col-md-3">
+                    <div class="d-block">
+                        <strong>Categories</strong>
+                        <div class="d-flex justify-content-between pt-2">
+                            <a href="#" class="link-secondary text-decoration-none">vegetables&f</a><a href="#" class="link-secondary text-decoration-none">vegetables&f</a></div>
+                        <div class="d-flex justify-content-between pt-1">
+                            <a href="#" class="link-secondary text-decoration-none">vegetables&f</a><a href="#" class="link-secondary text-decoration-none">vegetables&f</a></div>
+                        <div class="d-flex justify-content-between pt-1">
+                            <a href="#" class="link-secondary text-decoration-none">vegetables&f</a><a href="#" class="link-secondary text-decoration-none">vegetables&f</a></div>
+                        <div class="d-flex justify-content-between pt-1">
+                            <a href="#" class="link-secondary text-decoration-none">vegetables&f</a><a href="#" class="link-secondary text-decoration-none">vegetables&f</a></div>
+                        <div class="d-flex justify-content-between pt-1">
+                            <a href="#" class="link-secondary text-decoration-none">vegetables&f</a><a href="#" class="link-secondary text-decoration-none">vegetables&f</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="d-block">
+                        <strong>Categories</strong>
+                        <div class="d-flex justify-content-between pt-2">
+                            <a href="#" class="link-secondary text-decoration-none">vegetables&f</a><a href="#" class="link-secondary text-decoration-none">vegetables&f</a></div>
+                        <div class="d-flex justify-content-between pt-1">
+                            <a href="#" class="link-secondary text-decoration-none">vegetables&f</a><a href="#" class="link-secondary text-decoration-none">vegetables&f</a></div>
+                        <div class="d-flex justify-content-between pt-1">
+                            <a href="#" class="link-secondary text-decoration-none">vegetables&f</a><a href="#" class="link-secondary text-decoration-none">vegetables&f</a></div>
+                        <div class="d-flex justify-content-between pt-1">
+                            <a href="#" class="link-secondary text-decoration-none">vegetables&f</a><a href="#" class="link-secondary text-decoration-none">vegetables&f</a></div>
+                        <div class="d-flex justify-content-between pt-1">
+                            <a href="#" class="link-secondary text-decoration-none">vegetables&f</a><a href="#" class="link-secondary text-decoration-none">vegetables&f</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="d-block">
+                        <strong>Categories</strong>
+                        <div class="d-flex justify-content-between pt-2">
+                            <a href="#" class="link-secondary text-decoration-none">vegetables&f</a><a href="#" class="link-secondary text-decoration-none">vegetables&f</a></div>
+                        <div class="d-flex justify-content-between pt-1">
+                            <a href="#" class="link-secondary text-decoration-none">vegetables&f</a><a href="#" class="link-secondary text-decoration-none">vegetables&f</a></div>
+                        <div class="d-flex justify-content-between pt-1">
+                            <a href="#" class="link-secondary text-decoration-none">vegetables&f</a><a href="#" class="link-secondary text-decoration-none">vegetables&f</a></div>
+                        <div class="d-flex justify-content-between pt-1">
+                            <a href="#" class="link-secondary text-decoration-none">vegetables&f</a><a href="#" class="link-secondary text-decoration-none">vegetables&f</a></div>
+                        <div class="d-flex justify-content-between pt-1">
+                            <a href="#" class="link-secondary text-decoration-none">vegetables&f</a><a href="#" class="link-secondary text-decoration-none">vegetables&f</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="d-block">
+                        <strong>Categories</strong>
+                        <div class="d-flex justify-content-between pt-2">
+                            <a href="#" class="link-secondary text-decoration-none">vegetables&f</a><a href="#" class="link-secondary text-decoration-none">vegetables&f</a></div>
+                        <div class="d-flex justify-content-between pt-1">
+                            <a href="#" class="link-secondary text-decoration-none">vegetables&f</a><a href="#" class="link-secondary text-decoration-none">vegetables&f</a></div>
+                        <div class="d-flex justify-content-between pt-1">
+                            <a href="#" class="link-secondary text-decoration-none">vegetables&f</a><a href="#" class="link-secondary text-decoration-none">vegetables&f</a></div>
+                        <div class="d-flex justify-content-between pt-1">
+                            <a href="#" class="link-secondary text-decoration-none">vegetables&f</a><a href="#" class="link-secondary text-decoration-none">vegetables&f</a></div>
+                        <div class="d-flex justify-content-between pt-1">
+                            <a href="#" class="link-secondary text-decoration-none">vegetables&f</a><a href="#" class="link-secondary text-decoration-none">vegetables&f</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container border mt-4">
+            <div class="row g-2">
+                <div class="col-12 col-md-6">
+                    <div>
+                        payment partners <img src="https://freshcart.codescandy.com/assets/images/payment/visa.svg" width="30px" alt=""><img src="https://freshcart.codescandy.com/assets/images/payment/visa.svg" width="30px" alt=""><img src="https://freshcart.codescandy.com/assets/images/payment/visa.svg" width="30px" alt="">
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="text-end">
+                        Get deliveries with FreshCart
+                        <img class="p-2" src="https://freshcart.codescandy.com/assets/images/appbutton/appstore-btn.svg" width="100px" alt=""><img class="p-1" src="https://freshcart.codescandy.com/assets/images/appbutton/appstore-btn.svg" width="100px" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
